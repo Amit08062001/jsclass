@@ -42,13 +42,23 @@ let arr = [45 ,87 ,87, "amit" ,"kunal", " siwan"];  // first method
 //console.log(myarr.join())
 
 let sprarr = [...myarr, ...arr,...sarr];
-console.log(sprarr);
+//console.log(sprarr);
 
 let nested = [1,2,4,5,[3,4,5],55,[3,6,6,44,99]];
-console.log(nested.flat(1));
+//console.log(nested.flat(1));
 
-console.log(Array.isArray("amit"));
-console.log(Array.from("kunal"));
+//console.log(Array.isArray("amit"));
+//console.log(Array.from("kunal"));
 let stu = "amit";
 let stu1 = "kunal";
-console.log(Array.of(stu,stu1));
+//console.log(Array.of(stu,stu1));
+
+
+////// obj/////
+
+let myobj = {
+    name : "amit",
+    add :"Bihar",
+    code : 841406
+}
+console.log(myobj);
