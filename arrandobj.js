@@ -58,7 +58,51 @@ let stu1 = "kunal";
 
 let myobj = {
     name : "amit",
-    add :"Bihar",
+    add :"Bihar",      //// first method
     code : 841406
 }
-console.log(myobj);
+
+//console.log(myobj);
+//console.log(myobj.name);
+//console.log(myobj["name"]);
+//Object.freeze(myobj)
+
+let myobj1 = {
+   fname : "Kunal",
+    fadd :"jh",      //// first method
+    fcode : 458745
+}
+//let myobj2 = Object.assign( {}  ,  myobj, myobj1);
+//console.log(myobj2);
+
+let myobj2 = {...myobj ,...myobj1};
+//console.log(myobj2);
+
+/// obj declaration using new keyword
+
+let obj = new Object()  // singleton object
+obj.name = "rohit",
+obj.add = 'malmaliya'
+//console.log(obj)
+
+let obj1 ={
+    username:{
+        fullname:{
+            first:"amit",
+            last: "singh"
+        }
+    }
+}
+//console.log(obj1.username.fullname);
+
+let obj2 = [
+    {
+        name : "amit",
+        age : 23
+    },
+    {},
+    {}
+]
+//console.log(obj2)
+console.log(Object.keys (myobj));
+console.log(Object.values(myobj));
