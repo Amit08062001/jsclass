@@ -151,7 +151,7 @@ There is no such book
 // Log only those books which have more than 300 pages, are printed after 1900 and in the genre of "Dystopian Fiction"
 
 books.forEach((value)=>{
-  if(value.pages>=300 && value.year>1900)
+  if(value.pages>=300 && value.year>1900 && value.genre=="Dystopian Fiction")
     console.log(value)
 })
 
@@ -164,22 +164,6 @@ output
   year: 1949,
   publisher: 'Secker & Warburg',
   pages: 328
-}
-{
-  title: 'The Hobbit',
-  author: 'J.R.R. Tolkien',
-  genre: 'Fantasy',
-  year: 1937,
-  publisher: 'George Allen & Unwin',
-  pages: 310
-}
-{
-  title: 'The Lord of the Rings',
-  author: 'J.R.R. Tolkien',
-  genre: 'Fantasy',
-  year: 1954,
-  publisher: 'Allen & Unwin',
-  pages: 1009
 }
 {
   title: 'The Hunger Games',
